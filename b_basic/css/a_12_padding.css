@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* a_12_padding.css */
+
+#wrap {
+  width: 900px; height: 2000px;
+  margin:0 auto;
+  background-color: #eee;
+}
+
+.part {
+  width: 95%; height: 500px;
+  margin:0 auto;
+  background-color: #fff;
+}
+
+.part > div {
+  float: left;
+  width: 100px; height: 100px;
+  background-color: #acf;
+  background-image: linear-gradient(45deg, #acf, #fda );
+}
+.part .padding_01 {
+  width: 200px; height: 200px;
+}
+
+.padding_02 {
+  padding: 50px;
+}
+.part .padding_03{
+  width: 200px; height: 200px;
+}
+.padding_inner{
+  width: 100px; height: 100px;
+  margin: auto; margin-top: 50px;
+  /* color: #fff;
+  background-color: #a5a; */
+}
+.part .padding_04{
+  width:60px; height: 60px;
+  padding: 20px;  
+}
+
+.padding_05{
+ padding: 20px;
+ box-sizing: border-box;
+}
+/* box-sizing: border-box - content-box */
+
+
+/* -------------------------- */
+.none { display: none;}
+.more_p_01{ padding: 20px;}
+.more_p_02{ padding: 20px 40px;}
+.more_p_03{ padding: 10px 20px 40px;}
+.more_p_04{ padding: 20px 30px 40px 10px;}
+.more_p_05{ padding: 30px; padding-left: 50px;}
+.more_p_06{ padding-top: 10px; padding-right: 20px; padding-bottom: 30px; padding-left: 50px;}
+.more_p_07{ padding-left: 50px; padding-left: 80px;}
+.more_p_08{ margin: auto; padding: auto;}
+.more_p_09{ margin-top: -50px; margin-left: -10px;}
+.more_p_10{ padding-top: -150px;}

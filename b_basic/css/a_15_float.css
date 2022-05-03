@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* a_15_float.css */
+
+#wrap{
+  width: 900px; height: auto;
+  margin: auto;
+  background-color: #eee;
+}
+.none {
+  display: none;
+}
+
+.part {
+  width: 95%; height: auto; min-height: 500px;
+  background-color: #ddf;
+  margin: auto; margin-bottom: 50px;
+  padding: 10px; box-sizing: border-box;
+}
+
+.exam {
+  width: 100%; height: auto; min-height: 400px;
+  padding: 20px;
+  border: 1px solid #555;
+  box-sizing: border-box;
+}
+
+.float {
+  float: left;
+  width: 100px; height: 100px;
+  border: 1px solid #7aa;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.exam > a {
+  float: left;
+  /* display: block; */
+  width: 300px; height: 100px;
+  background-color: #fca;
+}
+
+/* ------------------------------------------ */
+
+.img_wrap {
+  float: left;
+  width: 150px; height: 150px;
+  /* margin: 10px; margin-bottom: 0; */
+  margin-right: 10px;
+  background-color: #fa0;
+}
+.content_par {
+  width: 100%; height: auto;
+  margin: 0;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+/* ------------------------------------------- */
+
+.exam2 {
+  width: 100%; height: auto; 
+  border: 1px solid #555;
+  box-sizing: border-box;
+}
+
+.float2 {
+  float: left;
+  width: 100px; height: 100px;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+.clear {
+  clear:left;
+  width: 200px; height: 50px;
+  background-color: #7f7;
+}
+
+/* 
+1. clear기능은 float의 형제요소로 동작
+2. float과 같이 사용할 수 없다.
+3. clear기능은 block요소, float형제요소의 마지막 
+*/
+
+.block {
+  width: 100%; height: 50px;
+  background-color: #fc7;
+}
+
+ul {
+  margin: 0; padding: 0;
+}
+li {
+  list-style: none;
+}
+
+/* ----------------------------------------- */
+
+.exam2 > ul {
+  width: 100%; height: auto;
+  background-color: #fff;
+}
+
+.exam2 li {
+  float: left;
+  width: 100px; height: 100px;
+  background-color: #adf;
+  background-image: linear-gradient(45deg, #fda, #afa, #f7a);
+}
+
+.exam2 > ul:after,
+.exam2 > ul::after {
+  content: ""; display: block;
+  clear: both;
+  width: 100%; height: 0;
+}

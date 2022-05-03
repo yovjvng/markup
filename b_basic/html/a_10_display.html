@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- a_10_display.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    .box_01 {
+      width: 200px;
+      height: 50px;
+      background-color: #aff;
+    }
+
+    .box_02 {
+      width : 300px;
+      height: 30px;
+      background-color: #fca;
+    }
+
+    ul {
+       width: 200px;
+       height: auto;
+       background-color: #ccc;
+    }
+
+    li {
+      width: 200px;
+      height: 30px; }
+    .list_01 {background-color: #faa;}
+    .list_02 {background-color: #aaf;}  
+
+    hr {
+      width: 500px; height: 20px;
+      background-color: #7ff;
+    }
+
+    .mini_group_01 {
+      width: 500px; height: 50px;
+      background-color: #daa;
+    }
+    a {
+      width: 400px; height: 30px;
+      background-color: #ac7;
+    }
+
+    button {
+      width: 300px; height: 30px;
+      background-color: #daa;
+      border: 0;
+    }
+    .convert_box {
+      width: 300px; height: 50px;
+      background-color: #ddd;
+    }
+
+    .convert_box > a {
+      display: inline-block;
+      width: 30%; height: 30px;
+      font-size: 0.7rem;
+    }
+
+    .convert_box_02 {
+      /* display: inline; */
+      display: none;
+      width: 500px; height: 50px;
+      background-color: #acf;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹기초</a></h1>
+    <h2>inline과 block의 개념</h2>
+    <div class="box_01">div는 크기를 가질 수 있는?</div>
+    <p class="box_02">p요소는 크기를?</p>
+    <ul>
+      <li class="list_01">list_01</li>
+      <li class="list_02">list_02</li>
+    </ul>
+
+    <hr />
+    <span class="mini_group_01">의미없는 작은 단위의 그룹</span>
+    <a href="#">link기능을 가진 요소</a>
+
+    <hr />
+
+  
+    <button type="button">버튼은 어떠한 형태?</button>
+    <button type="button">버튼은 어떠한 형태?</button>
+
+    <hr />
+
+    <div>결과?
+       <span>
+         인라인 형식의 요소
+       </span>
+    </div>
+
+    <div>
+    <a href="#">
+      <div>a 내부에</div>
+      <p>설명</p>
+      <dl>
+        <dt>제목</dt>
+        <dd>내용</dd>
+      </dl>
+    </a>
+    </div>
+
+    <div>
+      <p>설명</p>
+    </div>
+
+    <!-- <p>
+      <div>상자를 삽입</div>
+    </p> 
+    p안에 div x -->
+
+    <div class="convert_box">
+    <a href="#">block으로 변환</a>
+    <a href="#">block으로 변환</a>
+    <a href="#">block으로 변환</a>
+  </div>
+  <div class="convert_box_02">
+    Lorem ipsum dolor sit amet.
+  </div>
+
+  </div>
+ </body>
+</html>

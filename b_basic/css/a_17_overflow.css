@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* a_17_overflow.css */
+
+body, h1, h2, hr {
+  margin: 0;
+}
+
+#wrap {
+  height: 900px; height: auto;
+  margin: auto;
+  background-color: #ddd;
+}
+
+.part {
+  width: 90%; height: auto;
+  margin: 10px auto; padding-bottom: 30px;
+  background-color: #ffd;
+}
+
+.ex {
+  width: 70%; height: 200px;
+  margin: auto; margin-bottom: 100px;
+  border: 1px solid #777;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.hidden {
+  overflow: hidden;
+}
+.scroll {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.auto {
+  overflow: auto;
+}

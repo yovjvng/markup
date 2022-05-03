@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* a_11_margin.css */
+
+#wrap {
+  width: 900px; height: 3000px;
+  margin: auto;
+  background-color: #ddd;
+}
+.part {
+  width: 95%; height: auto;
+  border: 1px solid #333;
+  margin: auto;
+  background-color: #fff;
+}
+
+.part > div{
+  width: 200px; height: 200px;
+}
+
+.margin_01 {
+ margin: 50px;
+ background-color: #fac;
+}
+.margin_02{
+ margin: 10px;
+ background-color: #acf;
+}
+.margin_03{
+ margin: 50px;
+ background-color: #afc;
+}
+
+/* ---------------------------- */
+
+.part_02{
+  border: none;
+  height: 2000px;
+}
+.part_02 > div {
+float: left;
+background-image: linear-gradient(30deg, #afc,#fca);
+}
+
+.more_margin_01 {margin: 10px;}
+.more_margin_02 {margin: 30px;}
+.more_margin_03 {margin: 40px 20px;}
+.more_margin_04 {margin: 10px 20px 30px;}
+.more_margin_05 {margin: 5px 20px 10px 40px;}
+.more_margin_06 {margin: 10px; margin-left: 40px;}
+.more_margin_07 {margin-top: 40px; margin-left: 20px;
+margin-right: 10px; margin-bottom: 300px;}
+.more_margin_08 {margin-top: 10px; margin-top: 30px;}
+/* 같은 요소일때 뒤에있는것이 우선순위 */

@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+main .section1{
+/*    height: 800px;*/
+    border-bottom: 2px solid #444;
+      border-right: 2px solid #444;
+    border-left: 2px solid #444;
+     display: flex;
+    width: 100%;
+}
+main .section1 .section1-menu{
+    width: 25%;
+    border-right: 2px solid #444;
+    text-align: center;
+/*    padding-bottom: 0;*/
+}
+.section1 .more{
+    font-size: 14px;
+    display: none;
+    cursor: pointer;
+}
+#buttons{
+    font-size: 25px;
+    margin-left: 30px;
+}
+/*
+#gallery{
+   max-width: 1300px;
+}
+#gallery img{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+*/
+main .section1 .section1-menu h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "Baskerville BT";
+    margin: 50px 0;
+}
+
+button {
+    font-family: "Times New Roman ps";
+    padding: 30px 20px;
+    color: #333;
+    font-size: 100%;
+    transition: 0.5s;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+button.active {
+    text-decoration: line-through;
+}
+.modal-content {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    top: 3%;
+    left: 15%;
+    z-index: 200;
+    width: 70%;
+    height: 95%;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+.modal-content h3{
+    font-size: 20px;
+    background-color: #fff;
+            padding: 10px;
+}
+.modal-content > img {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 310px;
+}
+.btn_close {
+    position: fixed;
+    right: 18%;
+    top: 5%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 300;
+}
+.btn_close:hover{
+    text-shadow: 3px 2px 2px gray;
+    color: #f4b716;
+/*
+    border-radius: 50%;
+    border: 5px solid #f4b716;
+    width: 50px;
+    height: 50px;
+*/
+}
+.not_scroll {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.not_scroll .body-wrap {
+    position: relative;
+    top: 0;
+}
+#gallery .modal{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 4)
+}
+#gallery .modal img{
+    cursor: pointer;
+    width: 100%;
+}
+#gallery .modal:hover img{
+    opacity: 0.1;
+}
+#gallery .modal{
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #f4b716;
+}
+#gallery .modal::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #f4b716;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+#gallery .modal:hover::after{
+   opacity: 1;
+}
+#gallery #img8{
+    position: relative;
+}
+#gallery #img1{
+    position: relative;
+}
+#gallery .modal .text .title{
+    font-size: 15px;
+        position: absolute;
+left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    transition:opacity 0.4s;
+    border-radius: 54px;
+    padding: 2px 20px;
+    background-color: #444;
+    color: #fff;
+}
+#gallery .modal:hover .text .title{
+    opacity:1;
+}
+#gallery .modal .text .sub-title{
+    font-size: 23px;
+        position: absolute;
+left: 50%;
+    top: 33%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    transition:opacity 0.4s;
+    letter-spacing: 5px;
+}
+#gallery .modal:hover .text .sub-title{
+    opacity:1;
+}
+#gallery .modal .text .date{
+    width: 150px;
+    font-size: 12px;
+        position: absolute;
+left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    transition:opacity 0.4s;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+#gallery .modal:hover .text .date{
+    opacity:1;
+}
+#gallery {
+    text-align: center;
+   width: 75%;
+    font-size: 0;
+}
+
+#gallery img {
+    width: 100%;;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px #efefef;
+    vertical-align: top;
+    display: inline-block;
+}
+
+@media screen and (max-width:768px) {
+    #gallery img {
+        width: calc(100% / 2);
+    }
+}
+/* 다크모드 */
+body.is-active main .section1{
+    border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+body.is-active main .section1 .section1-menu{
+    border-right: 2px solid #fff;
+}
+body.is-active button{
+    color: #fff;
+}
+body.is-active main .section1 .section1-menu h2{
+    color: #fff;
+}
+body.is-active main .section1 .section1-menu{
+    border-bottom: 2px solid #fff;
+}
+
+/* 반응형 */
+@media screen and (max-width:1900px){
+     #gallery .modal img{
+        width: 100%;
+    }
+    #gallery .modal::after{
+        width: 100%;
+    }
+    main .section1 .section1-menu h2{
+        margin: 50px 10px;
+    }
+     #gallery .modal .text .title{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1680px){
+      #gallery .modal .text .title{
+        font-size: 12px;
+    }
+    #gallery .modal .text .sub-title{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:1400px){
+    
+    main .section1 .section1-menu{
+        width: 23%;
+    }
+    main .section1 .section1-menu h2{
+        font-size: 45px;
+    }
+    button {
+    padding: 20px 20px;
+    font-size: 80%;
+}
+    #gallery .modal .text .title{
+        font-size: 11px;
+    }
+    #gallery .modal .text .sub-title{
+        font-size: 17px;
+    }
+    #gallery .modal .text .date{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:1380px){
+    main .section1 .section1-menu h2{
+        font-size: 40px;
+        margin: 30px 10px;
+    }
+    #gallery .modal .text .sub-title{
+        font-size: 18px;
+    }
+       #gallery .modal .text .title{
+        font-size: 10px;
+    }
+    #gallery .modal .text .sub-title{
+        font-size: 15px;
+    }
+    #gallery .modal .text .date{
+        bottom: 0;
+    }
+}
+@media screen and (max-width:1023px){
+     main .section1 .section1-menu{
+        width: 20%;
+    }
+    #gallery{
+        width: 100%;
+    }
+     main .section1 .section1-menu h2{
+        font-size: 28px;
+    }
+    button {
+    padding: 30px 0;
+    font-size: 70%;
+}     
+        main .section1{
+        display: block;
+    }
+    main .section1 .section1-menu{
+        width: 100%;
+        height: 100px;
+        border-right: 0;
+        border-bottom: 2px solid #444;
+    }
+    button {
+        display: inline-block;
+    padding: 10px 40px;
+        font-size: 70%;
+}
+    button:first-child{
+        padding-left: 0;
+    }
+    button:last-child{
+        padding-right: 0;
+    }
+    #gallery{
+/*        width: 100%;*/
+    }
+    main .section1 .section1-menu h2{
+        font-size: 40px;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .section1 .more{
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    width: 20%;
+    margin: 0px 0px 0px 550px;
+}
+    #gallery .modal {
+/*    width: calc(100% / 3);*/
+}
+       #gallery .modal .text .title{
+        font-size: 11px;
+    }
+    #gallery .modal .text .sub-title{
+        font-size: 15px;
+    }
+    #gallery .modal .text .date{
+        font-size: 10px;
+        bottom: 0;
+    }
+}
+@media screen and (max-width:800px){
+    button {
+    padding: 10px 20px;
+        font-size: 60%;
+}
+    button:first-child{
+        padding-left: 0;
+    }
+    main .section1 .section1-menu h2{
+        font-size: 30px;
+    }
+        .section1 .more{
+        margin: 0 30px 0 550px;
+}
+    #gallery .modal {
+    width: calc(100% / 2);
+}
+}
+@media screen and (max-width:507px){
+      button {
+    padding: 10px 20px;
+        font-size: 50%;
+}
+            .section1 .more{
+                font-size: 12px;
+        margin: 0 30px 0 350px;
+}
+}
+

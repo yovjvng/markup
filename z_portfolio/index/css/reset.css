@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+input {
+    outline: 0;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+button{
+    outline: 0;
+}
+*::selection{
+    background-color: #ffedf0;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 220, 220, 1);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 10px;
+    height: 7px;
+    background-color: #f4b716;
+}
+
+
+@font-face {font-family: "Times New Roman PS"; src: url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.eot"); src: url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.woff") format("woff"), url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.svg#Times New Roman PS") format("svg"); }
+
+@font-face {font-family: "ADAM.CG PRO"; src: url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.eot"); src: url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.woff") format("woff"), url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9339979ff8c290b249e759aa1857de5d.svg#ADAM.CG PRO") format("svg"); }
+
+@font-face {font-family: "College"; src: url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.eot"); src: url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.woff") format("woff"), url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f9846a1309de5645385743a1ae8c61ad.svg#College") format("svg"); }
+
+@font-face {font-family: "Baskerville BT"; src: url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.eot"); src: url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.woff") format("woff"), url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1894688f1028cdee468076a7a09383f4.svg#Baskerville BT") format("svg"); }
+
+@font-face {font-family: "Blacksword"; src: url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.eot"); src: url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.woff") format("woff"), url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/021bc4dec3aa02d937a51bdfdccc0f4d.svg#Blacksword") format("svg"); }

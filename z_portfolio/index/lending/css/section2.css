@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.section2{
+	width: 100%;
+/*height: 1200px;*/
+/*    background-color: aqua;*/
+    text-align: center;
+    border-top: 1px solid #efefef;
+    padding-bottom: 50px;
+}
+.section2 h2{
+    font-size: 50px;
+    padding: 50px 0 10px 0;
+}
+.section2 p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.section2 > div{
+    display: inline-block;
+}
+.section2 .tooth1 img,
+.section2 .tooth2 img
+{
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 609px;]=]
+    height: 234px;
+}
+.section2 .tooth1 img:first-child{
+    padding-top: 0;
+}
+.section2 .tooth2 img:first-child{
+    padding-top: 0;
+}
+.section2 .tooth1{
+    margin-right: 200px;
+}
+@media screen and (max-width:1400px){
+	.section2 .tooth1{
+    margin-right: 50px;
+	}
+	.section2 .tooth1 img,
+.section2 .tooth2 img
+{
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 509px;
+    height: 234px;
+}
+}
+@media screen and (max-width:1024px){
+    .section2 h2{
+    font-size: 40px;
+    padding: 40px 0 10px 0;
+}
+}
+@media screen and (max-width:800px){
+.section2 h2{
+    font-size: 30px;
+    padding: 0 0 10px 0;
+}
+    .section2 p{
+    font-size: 10px;
+    margin-bottom: 40px;
+}
+    .section2 .tooth1 img,
+.section2 .tooth2 img
+{
+    padding-top: 20px;
+    width: 300px;
+    height: 150px;
+}
+    .section2 .tooth1{
+    margin-right: 0;
+}
+    .section2 .tooth1{
+    padding-bottom: 10px;
+}
+}

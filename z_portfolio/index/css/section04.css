@@ -1,0 +1,137 @@
+@charset "utf-8";
+.section4{
+    height: 537px;
+       border-right: 2px solid #444;
+    border-left: 2px solid #444;
+}
+.section4 .section4-content{
+    border-bottom: 2px solid #444;
+    height: 90%;
+    position: relative;
+}
+
+.section4 .section4-content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "Times New Roman ps";
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -3%;
+    top: 40%; 
+}
+.section4 .footer div{
+    width: calc(100% / 3);
+    display: inline-block;
+}
+.section4 .footer .air1{
+    width: 15%;
+}
+.section4 .footer .copyright{
+    width: 70%;
+    border-right: 2px solid #444;
+    border-left: 2px solid #444;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+}
+.section4 .footer .air2{
+    width: 15%;
+}
+.section4 .footer{
+    border-bottom: 2px solid #444;
+    height: 10%;
+}
+
+
+
+/* 다크모드 */
+body.is-active .section4{
+       border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+body.is-active .section4 .section4-content h2{
+    color: #fff;
+}
+body.is-active .section4 .section4-content{ 
+border-bottom: 2px solid #fff;
+}
+body.is-active .section4 .footer .copyright{
+      border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    color: #fff;
+}
+body.is-active .section4 .footer{
+    border-bottom: 2px solid #fff;
+}
+.content p{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Blacksword";
+    font-weight: 500;
+    letter-spacing: 10px;
+    padding: 50px 0 20px 0;
+}
+.contact-icon{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-icon span{
+    font-size: 20px;
+    display: block;
+     margin-top: 10px;
+}
+/* 반응형 */
+@media screen and (max-width:920px){
+     .section4 .section4-content h2{
+    font-size: 40px;
+}
+    .section4 .footer .air1{
+    width: 100%;
+        border-top: 2px solid #444;
+        height: 50px;
+}
+    body.is-active .section4 .footer .air1{
+        border-top: 2px solid #fff;
+    }
+    .section4 .footer .air2{
+    width: 100%;
+          border-bottom: 2px solid #444;
+        height: 50px;
+}
+    body.is-active .section4 .footer .air2{
+        border-bottom: 2px solid #fff;
+    }
+    .section4 .footer .copyright{
+    width: 100%;
+    border:  0;
+    font-size: 20px;
+         border-bottom: 2px solid #444;
+}
+    body.is-active .section4 .footer .copyright{
+        border-bottom: 2px solid #fff;
+    }
+    .section4 .footer div{
+/*    width: calc(100% / 2);*/
+        display: block;
+    }
+    .content p{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Blacksword";
+    font-weight: 500;
+    letter-spacing: 10px;
+    padding: 50px 0 20px 0;
+}
+.contact-icon span{
+    font-size: 15px;
+}
+}
+@media screen and (max-width:600px){
+    .section4 .section4-content h2{
+    font-size: 30px;
+    left: -5%;
+}
+    .copyright p{
+        font-size: 10px;
+    }
+}

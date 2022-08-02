@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+.popup{
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    z-index: 9999999;
+    transform: translateX(-50%);
+}
+
+.popup span{
+    border-radius: 50%;
+    padding: 10px 15px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.5);
+    
+}
+.blind{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99999;
+        
+}

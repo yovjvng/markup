@@ -1,0 +1,191 @@
+.twentytwenty-horizontal .twentytwenty-handle:before,
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    content: " ";
+    display: block;
+    background: white;
+    position: absolute;
+    z-index: 30;
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.3);
+    width: 3px;
+    height: 9999px;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.twentytwenty-before-label,
+.twentytwenty-after-label,
+.twentytwenty-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+.twentytwenty-before-label,
+.twentytwenty-after-label {
+    transition-property: opacity;
+}
+
+.twentytwenty-before-label:before,
+.twentytwenty-after-label:before {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 38px;
+    padding: 0 20px;
+    border-radius: 2px;
+}
+
+.twentytwenty-horizontal .twentytwenty-before-label:before,
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+    top: 50%;
+    margin-top: -19px;
+}
+
+.twentytwenty-vertical .twentytwenty-before-label:before,
+.twentytwenty-vertical .twentytwenty-after-label:before {
+    left: 50%;
+    margin-left: -45px;
+    text-align: center;
+    width: 90px;
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow
+ {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow {
+    top: 50%;
+    margin-top: -6px;
+}
+
+.twentytwenty-container {
+    box-sizing: content-box;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.twentytwenty-container img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.twentytwenty-container.active .twentytwenty-overlay,
+.twentytwenty-container.active :hover.twentytwenty-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.twentytwenty-container.active .twentytwenty-overlay .twentytwenty-before-label,
+.twentytwenty-container.active .twentytwenty-overlay .twentytwenty-after-label,
+.twentytwenty-container.active :hover.twentytwenty-overlay .twentytwenty-before-label,
+.twentytwenty-container.active :hover.twentytwenty-overlay .twentytwenty-after-label {
+    opacity: 0;
+}
+
+.twentytwenty-container * {
+    box-sizing: content-box;
+}
+
+.twentytwenty-before-label {
+    opacity: 0;
+}
+
+.twentytwenty-before-label:before {
+    content: attr(data-content);
+}
+
+.twentytwenty-after-label {
+    opacity: 0;
+}
+
+.twentytwenty-after-label:before {
+    content: attr(data-content);
+}
+
+.twentytwenty-horizontal .twentytwenty-before-label:before {
+    left: 10px;
+}
+
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+    right: 10px;
+}
+
+.twentytwenty-overlay {
+    transition-property: background;
+    background: rgba(0, 0, 0, 0);
+    z-index: 25;
+}
+
+.twentytwenty-overlay:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.twentytwenty-overlay:hover .twentytwenty-after-label,
+.twentytwenty-overlay:hover .twentytwenty-before-label {
+    opacity: 1;
+}
+
+.twentytwenty-before {
+    z-index: 20;
+}
+
+.twentytwenty-after {
+    z-index: 10;
+}
+.twentytwenty-handle{
+    position: absolute;
+    z-index: 40;
+    left: 50%;
+    cursor: pointer;
+    top: 50%;
+}
+.twentytwenty-handle2 {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:before {
+    bottom: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    top: 50%;
+    margin-top: 30px;
+    box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+
+.twentytwenty-left-arrow {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.twentytwenty-right-arrow {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+}

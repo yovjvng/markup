@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+main .top-img{
+    margin: 50px 0;
+}
+main{
+    width: 1100px;
+    margin: 0 auto;
+    font-size: 0;    
+} 
+main .title h1{
+    text-transform:uppercase;
+    font-size: 40px; 
+}
+main .title{
+    margin: 20px 0;
+}
+.menu-bar ul li{
+    display: inline-block;
+    text-transform: uppercase; 
+    margin: 30px 80px;
+    font-size: 14px;
+    
+
+    
+}
+.layout01{
+    width: 1100px;
+    text-align: center;
+    
+   
+}
+.menu-bar ul li:last-child{
+    margin-right: 0;
+}
+.menu-bar ul li:first-child{
+    margin-left: 0;
+}
+.menu-bar{
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.layout01 .side-bar ul li{
+    display: inline-block;
+  padding-right: 20px;
+    font-size: 12px;
+    
+}
+.side-bar ul{
+    margin: 20px 0;
+    float: right;
+    
+}
+
+.layout02 .list-title .font01{
+    font-size: 13px;
+}
+.layout02 .list-title .font02{
+    font-size: 18px;
+}
+.layout02 .list-title span{
+    display: block;
+    margin-top: 10px;
+}
+
+.list01{
+    width: 250px;
+    margin-top: 100px;
+    height: 252px;
+    
+}
+.layout02 .list01{
+    display: inline-block;
+    margin-right: 20px;
+}
+.layout02 .list01:last-child{
+    margin-right: 0;
+}
+.layout02 .list-title{
+    height: 80px;
+    width: 250px;
+}
+.layout02 .list01:hover img{
+    transform: scale(1.2);
+    
+}
+.layout02 .list01 div{
+    width: 252.5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+

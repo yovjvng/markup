@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+.section3{
+    height: 1500px;
+    background-color: #b49568;
+    text-align: center;
+/*    padding-bottom: 50px;*/
+}
+.section3 h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    padding: 50px 0;
+}
+.section3 .doc01{
+    float: left;
+    width: 100%;
+    margin: 60px 0;
+}
+.section3 .doc01 .profile,
+.section3 .doc02 .profile{
+    display: inline-block;
+    vertical-align: top;
+}
+.section3 .doc01 img{
+    padding-right: 140px;
+}
+.section3 .doc01 p,
+.section3 .doc02 p{
+    font-size: 25px;
+    display: inline-block;
+}
+.section3 .doc01 p span,
+.section3 .doc02 p span{
+    font-size: 55px;
+    font-weight: 900;
+    color: #fff;
+}
+.section3 .doc02{
+    float: right;
+    width: 100%;
+}
+.section3 .doc02 img{
+    padding-left: 140px;
+}
+.section3 .doc01 .text p,
+.section3 .doc02 .text p{
+    font-size: 20px;
+    padding: 10px 0;
+    float: left;
+}
+.section3 .doc01 .text,
+.section3 .doc02 .text{
+    padding-top: 80px;
+}
+
+@media screen and (max-width:600px){
+    .section3 .doc01{;
+    margin: 0;
+}
+    .section3 h2{
+    font-size: 30px;
+}
+    .section3{
+		width: 100%;
+    height: 2000px;
+    background-color: #b49568;
+    text-align: center;
+/*    padding-bottom: 50px;*/
+}
+    .section3 .doc01 img{
+    width: 100%;
+        margin: 0 0 20px 80px;
+}
+    .section3 .doc02 img{
+    width: 100%;
+/*        padding-right: 100px;*/
+        margin: 20px 0;
+        margin-left: -120px;
+}
+    .section3 .doc01 p,
+.section3 .doc02 p{
+    font-size: 15px;
+}
+    .section3 .doc01 p span,
+.section3 .doc02 p span{
+    font-size: 35px;
+}
+    .section3 .doc01 .text p,
+.section3 .doc02 .text p{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.section3 .doc01 .text,
+.section3 .doc02 .text{
+    padding-top: 30px;
+}
+    .section3 .doc01{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,29 @@
+.hide {
+    display: none;
+}
+
+/* Grid HTML Classes */
+.row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 550px;
+    *zoom: 1;
+}
+
+.columns {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.columns img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        width: 80%;
+    }
+
+}

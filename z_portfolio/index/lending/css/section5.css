@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.section5{
+	width: 100%;
+/*    height: 900px;*/
+    background-color: #efefef;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section5 h2{
+    font-size: 50px;
+    padding: 50px 0;
+}
+.section5-con .location-img{
+    display: inline-block;
+}
+.section5-con .location{
+    display: inline-block;
+    vertical-align: top;
+/*    float:right;*/
+}
+.location-text{
+    padding: 30px 0;
+    border-bottom: 1px solid #444;
+    max-width: 500px;
+}
+.location-text:first-child{
+    padding-top: 0;
+}
+.location-text span{
+    font-size: 40px;
+}
+.location-text p{
+    font-size: 25px;
+}
+.location > p{
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.section6{
+/*    height: 200px;*/
+    background-color: #343434;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.section6 h3{
+/*    width: 400px;*/
+    width: 35%;
+/*    border-right: 1px solid #efefef;*/
+    display: inline-block;
+    text-align: center;
+}
+.section6 h3 img{
+    margin: 30px;
+}
+.ims-form{
+/*    width: 1400px;*/
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;  
+}
+table tr{
+    font-size: 20px;
+    color: #fff;
+}
+table tr td{
+    padding: 10px;
+}
+table tr span{
+    border: 1px solid #efefef;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1024px){
+    .section5 h2{
+    font-size: 40px;
+    padding: 40px 0;
+}
+    .location-text span{
+    font-size: 30px;
+}
+.location-text p{
+    font-size: 20px;
+}
+    .location > p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+}
+@media screen and (max-width:1283px){
+	  .section6 h3{
+    width: 100%;
+}
+    .section6 h3 img{
+        width: 250px;
+    }
+	 .ims-form{ 
+        width: 100%;
+		 text-align: center;
+		 margin-top: 0;
+}
+}
+@media screen and (max-width:845px){
+	table tr{
+    font-size: 15px;
+}
+	       table tr td .button{
+           width: 100px;
+}
+	   table tr td{
+    padding: 5px;
+}
+}
+@media screen and (max-width:600px){
+       .section5 h2{
+    font-size: 30px;
+    padding: 30px 0;
+}
+    .section5-con .location-img img{
+        width: 400px;
+    }
+    .location-text span{
+    font-size: 25px;
+}
+.location-text p{
+    font-size: 15px;
+}
+       .location > p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+    .section6 h3{
+    width: 100%;
+}
+    .section6 h3 img{
+        width: 200px;
+    }
+    table tr{
+    font-size: 5px;
+}
+    .ims-form{
+    margin-top: 5px; 
+        width: 100%;
+}
+    table tr td{
+    padding: 3px;
+}
+	table tr td input{
+/*		width: 60px;*/
+	}
+       table tr td .button{
+           width: 100px;
+}
+}
